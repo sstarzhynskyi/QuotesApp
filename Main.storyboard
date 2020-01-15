@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController wantsFullScreenLayout="YES" id="BYZ-38-t0r" customClass="ViewController" customModule="QuotesApp3" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" alpha="0.90000000000000002" contentMode="center" preservesSuperviewLayoutMargins="YES" layoutMarginsFollowReadableWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" layoutMarginsFollowReadableWidth="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xem-Ey-9KK">
+                                <rect key="frame" x="44" y="539" width="129" height="50"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="K3l-0q-xBy"/>
+                                </constraints>
+                                <state key="normal" title="Tap to Get a Quote">
+                                    <color key="titleColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="tapToGetQuoteAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3JI-Pg-TKu"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" horizontalCompressionResistancePriority="751" preservesSuperviewLayoutMargins="YES" layoutMarginsFollowReadableWidth="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HkI-V8-EEO">
+                                <rect key="frame" x="220" y="549" width="123" height="30"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <bool key="isElement" value="NO"/>
+                                </accessibility>
+                                <state key="normal" title="Become a partner">
+                                    <color key="titleColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="tapBecomeAPartnerAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qZC-27-H0s"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" preservesSuperviewLayoutMargins="YES" layoutMarginsFollowReadableWidth="YES" image="Screenshot 2020-01-13 at 09.41.16" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ezo-0P-VOK">
+                                <rect key="frame" x="28" y="149" width="331" height="240"/>
+                                <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" preservesSuperviewLayoutMargins="YES" layoutMarginsFollowReadableWidth="YES" text="" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="5" adjustsLetterSpacingToFitWidth="YES" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hdn-al-i6D">
+                                <rect key="frame" x="40" y="415" width="295" height="95"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="It's time to cook!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aw8-vB-IFz">
+                                <rect key="frame" x="47" y="104" width="296" height="37"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="31"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="HkI-V8-EEO" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="xem-Ey-9KK" secondAttribute="trailing" constant="8" symbolic="YES" id="4vJ-l3-7P8"/>
+                            <constraint firstItem="aw8-vB-IFz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="47" id="5dJ-lN-7lg"/>
+                            <constraint firstItem="xem-Ey-9KK" firstAttribute="top" secondItem="Hdn-al-i6D" secondAttribute="bottom" constant="29" id="C1F-SB-QCK"/>
+                            <constraint firstItem="xem-Ey-9KK" firstAttribute="baseline" secondItem="HkI-V8-EEO" secondAttribute="baseline" id="GYw-wx-cz5"/>
+                            <constraint firstItem="Ezo-0P-VOK" firstAttribute="top" secondItem="aw8-vB-IFz" secondAttribute="bottom" constant="8" id="UsB-7d-Df2"/>
+                            <constraint firstItem="Hdn-al-i6D" firstAttribute="top" secondItem="Ezo-0P-VOK" secondAttribute="bottom" constant="26" id="WTt-vT-Bu5"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="HkI-V8-EEO" secondAttribute="trailing" constant="32" id="ZGC-CW-XFZ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Ezo-0P-VOK" secondAttribute="trailing" constant="16" id="anT-cs-hQY"/>
+                            <constraint firstItem="aw8-vB-IFz" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="60" id="cpQ-m3-BbC"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="xem-Ey-9KK" secondAttribute="bottom" constant="78" id="ghV-PR-2BF"/>
+                            <constraint firstItem="xem-Ey-9KK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="44" id="h22-6g-Jqh"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="aw8-vB-IFz" secondAttribute="trailing" constant="32" id="jUh-wd-W5V"/>
+                            <constraint firstItem="Ezo-0P-VOK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="28" id="mEB-zx-hOH"/>
+                            <constraint firstItem="Hdn-al-i6D" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="nP3-rz-4QH"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Hdn-al-i6D" secondAttribute="trailing" constant="40" id="q6J-Is-2TV"/>
+                            <constraint firstItem="Hdn-al-i6D" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="xnt-zm-t4r"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <splitViewMasterSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="375" height="667"/>
+                    <connections>
+                        <outlet property="quoteLabel" destination="Hdn-al-i6D" id="hyY-2i-T51"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="111.99400299850076"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Screenshot 2020-01-13 at 09.41.16" width="330.66665649414062" height="240"/>
+    </resources>
+</document>
