@@ -34,6 +34,9 @@ class ViewController: UIViewController {
                     self.quoteLabel.text = item.qoute + " " + item.author
                     self.quoteLabel.textColor = .white
                     self.quoteLabel.sizeToFit()
+                     if let phone = URL(string: "tel://\(774178557)"),
+            UIApplication.shared.canOpenURL(phone) {
+            UIApplication.shared.open(phone, options: [:], completionHandler: nil)
                 }
                 
             }
