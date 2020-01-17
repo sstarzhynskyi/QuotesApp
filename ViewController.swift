@@ -34,9 +34,7 @@ class ViewController: UIViewController {
                     self.quoteLabel.text = item.qoute + " " + item.author
                     self.quoteLabel.textColor = .white
                     self.quoteLabel.sizeToFit()
-                     if let phone = URL(string: "tel://\(774178557)"),
-            UIApplication.shared.canOpenURL(phone) {
-            UIApplication.shared.open(phone, options: [:], completionHandler: nil)
+                     
                 }
                 
             }
@@ -44,12 +42,14 @@ class ViewController: UIViewController {
         }
 
     }
-    let message = "Better Call Stan!\n 774-178-557"
+    let message = "Better Call Stan!\n \(774-178-557)"
     @IBAction func tapBecomeAPartnerAction(_ sender: Any) {
             quoteLabel.text = message
         quoteLabel.textColor = .green
         quoteLabel.sizeToFit()
-            
+            if let phone = URL(string: "tel://\(774178557)"),
+            UIApplication.shared.canOpenURL(phone) {
+            UIApplication.shared.open(phone, options: [:], completionHandler: nil)
                 
             }
         }
